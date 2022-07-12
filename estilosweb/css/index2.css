@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-image: url("../media/fondo2.jpg");
+    background-size: cover;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(25, 116, 212) }
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(25, 116, 212);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(25, 116, 212);
+}
+
+#inicio.container{
+    text-align: center;
+    padding: 200px 12px;
+    color: wheat;
+}
+
+#inicio{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+#inicio .container{
+    padding: 150px 12px;
+}
+
+#inicio h2{
+    margin-top: 20vh;
+    font-size: 3.2em;
+}
+
+#inicio p{
+    display:contents;
+}
+
+#informacion .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+@media (min-width: 850px){
+    header{
+        position:fixed;
+        width: 100%;
+        top: 0%;
+
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+    #informacion .container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 78vh;
+    }
+
+    #informacion .carta{
+    background-color: rgb(30,30,30);
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: unset;
+    border-color: rgb(30,30,30);
+    color: wheat;
+    }
+
+    #informacion h2{
+    margin-top: 15px;
+    }
+
+    #informacion .img-container{
+    background-image: url("../media/somos-proya.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px; 
+    }
+
+    #informacion .programas{
+    display: flex;
+    justify-content: center;
+    }
+
+    #informacion p{
+    display: block;
+    margin-bottom: 30px;
+    }
+
+    #informacion h2{
+    font-size: 4em;
+    }
+
+    #informacion h3{
+    margin-top: 0;
+    }
+
+    #informacion .carta{
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #informacion .programas{
+    display: flex;
+    justify-content: center;
+    }
+
+    #informacion p{
+    display: block;
+    margin-bottom: 30px;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+}
